@@ -189,3 +189,157 @@
 //     invertedString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
 // }
 // console.log(invertedString);
+
+
+
+// const firstBook = {
+//     title: "The Last Kingdom",
+//     coverImage:
+//       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+//   };
+  
+//   const {
+//     title: firstTitle,
+//     coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+//   } = firstBook;
+  
+//   console.log(firstTitle); // The Last Kingdom
+//   console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+  
+//   const secondBook = {
+//     title: "Сон смішної людини",
+//   };
+  
+//   const {
+//     title: secondTitle,
+//     coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+//   } = secondBook;
+  
+//   console.log(secondTitle); // Сон смішної людини
+//   console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+
+
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const values = Object.values(apartment);
+//   console.log(values);
+//   // Change code below this line
+//   const keys = Object.keys(apartment);
+//   console.log(keys);
+
+
+  
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+  
+//   const hexColors = [];
+//   const rgbColors = [];
+//   // Change code below this line
+  
+//   for (const color of colors) {
+//    hexColors.push(color);
+//    rgbColors.push(color);
+    
+//     console.log(hexColors);
+// console.log(rgbColors);
+//   };
+
+
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   console.log(products);
+  
+//   function getAllPropValues(propName) {
+//     // Change code below this line
+  
+//   const newArray = [];
+  
+//     for (const product of products) {
+//       if (propName in product) {
+//         newArray.push(product[propName])
+//       };
+//     };
+//   return newArray;
+//     // Change code above this line
+    
+//   };
+
+// const highTemperatures = {
+//     yesterday: 28,
+//     today: 26,
+//     tomorrow: 33,
+//   };
+  
+//   const { yesterday, today, tomorrow } = highTemperatures;
+
+//   // Change code below this line
+  
+//   const numberYesterday = yesterday;
+//   const numberToday = today;
+//   const numberTomorrow = tomorrow;
+  
+// //   // Change code above this line
+//   const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+
+  
+// const atTheOldToad = {
+//     potions: [
+//       { name: "Speed potion", price: 460 },
+//       { name: "Dragon breath", price: 780 },
+//       { name: "Stone skin", price: 520 },
+//     ],
+//     // Change code below this line
+//     getPotions() {
+//       return this.potions;
+//     },
+  
+//     addPotion(newPotion) {
+//       const {potions} = this;
+      
+//       for(const {name} of potions){
+//         if (name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`; }
+//       }
+//       potions.push(newPotion);
+//     },
+    
+//    removePotion(potionName) {
+//       const {potions} = this;
+     
+//       for(let i = 0; i < potions.length; i += 1) {
+//         if (potions[i].name === potionName) {
+//           potions.splice(i, 1);
+//         }
+//       }
+//     },
+    
+//     updatePotionName(oldName, newName) { 
+//       const {potions} = this;
+  
+//       for (let i = 0; i < potions.length; i += 1) {
+//       const potion = potions[i];
+        
+//         if (potion.name === oldName) {
+//         potion.name = newName;
+//       }
+//       }       
+//     },
+//     // Change code above this line
+//   };
+  
